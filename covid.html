@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Covid 19 API in Javascript</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center mt-5">Covid 19 Live Data in Table</h1>
+		<br><br>
+		<table class="table table-dark">
+		  <thead>
+		    <tr>
+		      
+		      <th scope="col">Total Cases</th>
+		      <th scope="col">Total Deaths</th>
+		      <th scope="col">Total Recovered</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr id="data">
+		      
+		    </tr>
+		  </tbody>
+		</table>
+		<br>
+		<button onclick="refreshData()" class="btn btn-danger btn-block">Refresh Data</button>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="covid.js"></script>
+<!-- <script>
+	$(document).ready(function(){
+	init()
+
+	function init(){
+		var url = "https://api.covid19api.com/summary"
+
+		$.get(url, function(data){
+			console.log(data.Global)
+		})
+	}
+})
+</script>    
+ -->
+</html>
